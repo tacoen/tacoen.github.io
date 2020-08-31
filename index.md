@@ -1,7 +1,8 @@
 
 ![](https://www.gravatar.com/avatar/5f0a9777b6e3d0a462c6645dd1191b34?s=200)
 
-
-{% for repository in site.github.public_repositories %}
-  * {{ repository|json_encode(constant('JSON_PRETTY_PRINT')) }}
+{% assign public_repositories = site.github.public_repositories | where:'fork', false | sort: 'stargazers_count' | reverse %}
+{% for repository in public_repositories limit: 9 %}
+  * <a href='{{ repository.html_url }}'>{{ repository.name }}</a>  
+    * {{ repository|json_encode(constant('JSON_PRETTY_PRINT')) }}
 {% endfor %}
