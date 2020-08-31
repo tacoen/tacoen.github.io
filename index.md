@@ -14,9 +14,7 @@
 
 {{ repository.description }}
   
-{% for t in repository.topics %}
-<small class='topic'>{{ t }}</small>
-{% enfor %}
+{% for t in repository.topics %}<small class='topic'>{{ t }}</small>{% enfor %}
 
 {% endif %}
 
