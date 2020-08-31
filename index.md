@@ -3,5 +3,5 @@
 
 
 {% for repository in site.github.public_repositories %}
-  * {{ dump(repository) }}
+  * {{ repository|json_encode(constant('JSON_PRETTY_PRINT')) }}
 {% endfor %}
