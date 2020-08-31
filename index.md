@@ -3,12 +3,13 @@
 How random is randomize?
 
 ## Repository
-
 {% assign public_repositories = site.github.public_repositories | sort: 'updated_at' | reverse %}
 {% for repository in public_repositories limit:5 %}
 {% if repository.name != 'tacoen.github.io' %}
 ### <a href='{{ repository.html_url }}'>{{ repository.name }}</a>
 {{ repository.description }}
+#### topic
 {% for t in repository.topics %}<small class='topic'>{{ t }}</small>{% endfor %}
+
 {% endif %}
 {% endfor %}
