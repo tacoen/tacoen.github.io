@@ -1,1 +1,17 @@
+
 title: 'tacoen ph'
+description: tacoen ph from scartch
+
+github_username: tacoen
+
+
+markdown: kramdown
+gems:
+   - jekyll-feed
+   - jekyll-timeago
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+
