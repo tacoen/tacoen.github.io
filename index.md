@@ -21,8 +21,8 @@ How random is randomize?
 
 
 <style type="text/css" rel="stylesheet">
- .cards { display: plex; }
- .cards > div { display: plex; }
+.cards {display: flex;justify-content: space-evenly;flex-direction: row;flex-wrap: wrap;}
+.cards > div {display: block;padding:  .5rem;border: 1px solid #0003;border-radius: .25rem;margin: 0 1rem 1rem 0;}
 .topic-list { display: block; font-size: .9rem; }
-.topic { color: #fff; background: #999; display:inline-block; margin-right: .5rem; padding: .25rem .5rem; }
-</style>
+.topic { color: #fff; background: #999; display:inline-block; margin-right: .5rem; padding: .25rem .5rem;border-radius: .15rem }
+<</style>
