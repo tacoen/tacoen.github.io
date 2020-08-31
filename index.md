@@ -8,8 +8,9 @@ How random is randomize?
 {% if repository.name != 'tacoen.github.io' %}
 ### <a href='{{ repository.html_url }}'>{{ repository.name }}</a>
 {{ repository.description }}
-#### topic
-{% for t in repository.topics %}<small class='topic'>{{ t }}</small>{% endfor %}
+{% if repository.topics %}
+Topic: {% for t in repository.topics %}{{ t }}, {% endfor %}
+{% endif %}
 
 {% endif %}
 {% endfor %}
