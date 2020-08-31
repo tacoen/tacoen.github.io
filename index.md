@@ -25,6 +25,6 @@ How random is randomize?
 .cards > div {display: block;padding:  .5rem;border: 1px solid #0003;border-radius: .25rem;margin: 0 1rem 1rem 0;width: 45%;box-sizing: border-box;}
 .topic-list { display: block; font-size: .9rem; }
 .topic { color: #fff; background: #999; display:inline-block; margin-right: .5rem; padding: .25rem .5rem;border-radius: .15rem }
-.myavatar { border-radius: 50%; }
+.myavatar { border-radius: 50%; position: absolute; top: 40px; left: 70%;}
 <</style>
 
