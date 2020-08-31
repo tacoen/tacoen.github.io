@@ -19,10 +19,10 @@ How random is randomize?
 {% endif %}
 {% endfor %}
 
-
 <style type="text/css" rel="stylesheet">
-.cards {display: flex;justify-content: space-evenly;flex-direction: row;flex-wrap: wrap;}
-.cards > div {display: block;padding:  .5rem;border: 1px solid #0003;border-radius: .25rem;margin: 0 1rem 1rem 0; width: 32% box-sizing: border-box}
+.cards {display: flex;justify-content: flex-start;flex-direction: row;flex-wrap: wrap;}
+.cards > div {display: block;padding:  .5rem;border: 1px solid #0003;border-radius: .25rem;margin: 0 1rem 1rem 0;width: 45%;box-sizing: border-box;}
 .topic-list { display: block; font-size: .9rem; }
 .topic { color: #fff; background: #999; display:inline-block; margin-right: .5rem; padding: .25rem .5rem;border-radius: .15rem }
 <</style>
+
