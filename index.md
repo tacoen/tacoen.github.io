@@ -1,5 +1,5 @@
 
-![](https://www.gravatar.com/avatar/5f0a9777b6e3d0a462c6645dd1191b34?s=200)
+![tacoen-gravatar](https://www.gravatar.com/avatar/5f0a9777b6e3d0a462c6645dd1191b34?s=200)
 
 
 ## Repository
@@ -9,8 +9,15 @@
 {% for repository in public_repositories limit:5 %}
 
 {% if repository.name != 'tacoen.github.io' %}
-  * <a href='{{ repository.html_url }}'>{{ repository.name }}</a><br>{{ repository.description }}
-    * {{ repository|json_encode(constant('JSON_PRETTY_PRINT')) }}
+
+### <a href='{{ repository.html_url }}'>{{ repository.name }}</a>
+
+{{ repository.description }}
+  
+{% for t in repository.topics %}
+<small class='topic'>{{ t }}</small>
+{% enfor %}
+
 {% endif %}
 
 {% endfor %}
