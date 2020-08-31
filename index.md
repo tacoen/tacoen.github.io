@@ -9,7 +9,7 @@ How random is randomize?
 ### <a href='{{ repository.html_url }}'>{{ repository.name }}</a>
 {{ repository.description }}
 {% if repository.topics %}
-<br>Topic: {% for t in repository.topics %}<span class='topic'>{{ t }}</span> {% endfor %}
+<div class='topic-list'>{% for t in repository.topics %}<span class='topic'>{{ t }}</span> {% endfor %}</div>
 {% endif %}
 
 
@@ -18,5 +18,6 @@ How random is randomize?
 
 
 <style type="text/css" rel="stylesheet">
-.topic { color: red; }
+.topic-list { display: block; font-size: .9rem; }
+.topic { color: #fff; background: #999; display:inline-block; margin-right: .5rem; padding: .15rem .25rem; }
 </style>
