@@ -3,6 +3,6 @@
 
 {% assign public_repositories = site.github.public_repositories | where:'fork', false | sort: 'stargazers_count' | reverse %}
 {% for repository in public_repositories limit: 9 %}
-  * <a href='{{ repository.html_url }}'>{{ repository.name }}</a>  
+  * <a href='{{ repository.html_url }}'>{{ repository.name }}</a><br>{{ repository.description }}
     * {{ repository|json_encode(constant('JSON_PRETTY_PRINT')) }}
 {% endfor %}
