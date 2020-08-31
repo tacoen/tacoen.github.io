@@ -19,5 +19,5 @@ How random is randomize?
 
 <style type="text/css" rel="stylesheet">
 .topic-list { display: block; font-size: .9rem; }
-.topic { color: #fff; background: #999; display:inline-block; margin-right: .5rem; padding: .15rem .25rem; }
+.topic { color: #fff; background: #999; display:inline-block; margin-right: .5rem; padding: .25rem .5rem; }
 </style>
