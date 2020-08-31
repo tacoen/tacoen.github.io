@@ -1,7 +1,11 @@
 
 <img class='myavatar' src='https://avatars2.githubusercontent.com/u/118434?s=460'>
 
-How random is randomize?
+How random is randomize
+
+{% for gist site.github.public.gist %}
+{{ gist|json_encode(constant('JSON_PRETTY_PRINT')) }}
+{% endfor %}
 
 ## Repository
 <div class='cards'>
@@ -28,3 +32,4 @@ How random is randomize?
 .myavatar { border-radius: 50%; position: absolute; top: 2.5rem; left: 70%; border: 5px solid #fff }
 <</style>
 
+Terima-kasih Github.
