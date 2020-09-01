@@ -3,16 +3,16 @@
 
 How random is randomize
 
-## Gist
-{% for gist in site.github.public.gist %}
-{{ gist|json_encode(constant('JSON_PRETTY_PRINT')) }}
-{% endfor %}
 
 ## Repository
 <div class='cards'>
 {% assign public_repositories = site.github.public_repositories | sort: 'updated_at' | reverse %}
 {% for repository in public_repositories limit:11 %}
 {% if repository.name != 'tacoen.github.io' %}
+
+{% if repository.name == 'reramen' %}
+{{ repository|json_encode(constant('JSON_PRETTY_PRINT')) }}
+{% endif %}
 
 <div>
 <h3><a href='{{ repository.html_url }}'>{{ repository.name }}</a></h3>
