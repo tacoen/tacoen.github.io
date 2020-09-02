@@ -10,10 +10,6 @@ How random is randomize
 {% for repository in public_repositories limit:11 %}
 {% if repository.name != 'tacoen.github.io' %}
 
-{% if repository.name == 'reramen' %}
-{{ repository|json_encode(constant('JSON_PRETTY_PRINT')) }}
-{% endif %}
-
 <div>
 <h3><a href='{{ repository.html_url }}'>{{ repository.name }}</a></h3>
 <p>{{ repository.description }}</p>
@@ -29,7 +25,7 @@ How random is randomize
 .cards {display: flex;justify-content: flex-start;flex-direction: row;flex-wrap: wrap;}
 .cards > div {display: block;padding:  .5rem;border: 1px solid #0003;border-radius: .25rem;margin: 0 1rem 1rem 0;width: 45%;box-sizing: border-box;}
 .topic-list { display: block; font-size: .9rem; }
-.topic { color: #fff; background: #999; display:inline-block; margin-right: .5rem; padding: .25rem .5rem;border-radius: .15rem }
+.topic { color: #fff; background: #999; display:inline-block; margin: 0 .5rem .5rem 0; padding: .25rem .5rem;border-radius: .15rem }
 .myavatar { border-radius: 50%; position: absolute; top: 2.5rem; left: 70%; border: 5px solid #fff }
 <</style>
 
