@@ -6,13 +6,14 @@ How random is randomize
 
 ## Repository
 <div class='cards'>
-{% assign public_repositories = site.github.public_repositories | sort: 'updated_at' | reverse %}
+{% assign public_repositories = site.github.public_repositories | sort: 'stargazers_count' | reverse  %}
 {% for repository in public_repositories limit:11 %}
 {% if repository.name != 'tacoen.github.io' %}
 
 <div>
 <h3><a href='{{ repository.html_url }}'>{{ repository.name }}</a></h3>
 <p>{{ repository.description }}</p>
+<p>Language: {{repository.language}}, License: {{repository.license.name}}</p>
 {% if repository.topics|length > 0 %}
 <div class='topic-list'>{% for t in repository.topics %}<span class='topic'>{{ t }}</span> {% endfor %}</div>
 {% endif %}
