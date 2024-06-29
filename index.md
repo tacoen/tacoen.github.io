@@ -28,6 +28,7 @@ How random is randomize
 .topic-list { display: block; font-size: .9rem; }
 .topic { color: #fff; background: #999; display:inline-block; margin: 0 .5rem .5rem 0; padding: .25rem .5rem;border-radius: .15rem }
 .myavatar { border-radius: 50%; position: absolute; top: 2.5rem; left: 70%; border: 5px solid #fff }
-<</style>
+</style>
 
 Terima-kasih Github.
+<script>console.log('hi js!')</script>
